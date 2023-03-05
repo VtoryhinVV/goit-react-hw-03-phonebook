@@ -21,7 +21,6 @@ export const ContactForm = ({ onSubmit }) => {
       validationSchema={userSchema}
       onSubmit={(values, actions) => {
         onSubmit(values);
-        console.log(actions);
         actions.resetForm();
       }}
     >
